@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # This script contians a flask web application
 
-'Flask web application that run on all computer in the same network'
+'''Web application that run on all computer in the same network'''
 
 from flask import Flask
 
