@@ -4,6 +4,7 @@
 '''
 Flask application that listens on 0.0.0.0 port 500
 '''
+
 from flask import Flask
 
 app = Flask("__name__")
