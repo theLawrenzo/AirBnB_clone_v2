@@ -9,3 +9,8 @@ TASKS:
 
 1. HBNB
 - Write a script that starts a flask web application
+	. Application must listen on 0.0.0.0 port 5000
+
+2. C is fun
+- Write a script that starts a flask application
+	. Application must listen on 0.0.0.0 port 5000
