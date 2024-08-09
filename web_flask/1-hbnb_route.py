@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-# This script contians a flask web application
-
 '''Web application that run on all computer in the same network'''
 
 from flask import Flask
@@ -9,6 +7,7 @@ app = Flask(__name__)
 
 @app.route('/hbnb', strict_slashes=False)
 def hbnb():
+	'''Returns a string object'''
 	return "HBNB"
 
 if __name__ == "__main__":
