@@ -10,7 +10,7 @@ app = Flask(__name__)
 @app.route('/c/<text>', strict_slashes=False)
 def c(text):
 	'''Returns a dynamic string object'''
-	return 'C {}'.format(text)
+	return 'C {}'.format(text.replace('_', ' '))
 
 if __name__ == '__main__':
 	app.run(host='0.0.0.0', port=5000, debug=True)
