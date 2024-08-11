@@ -9,8 +9,8 @@ app = Flask(__name__)
 
 @app.route("/", strict_slashes=False)
 def index():
-	'''Function that displays the home page'''
-	return "Hello HBNB!"
+    '''Function that displays the home page'''
+    return "Hello HBNB!"
 
 if __name__ == "__main__":
-	app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
