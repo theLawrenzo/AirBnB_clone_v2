@@ -13,10 +13,12 @@ def index():
     '''Returns a string HBNB to the client'''
     return 'Hello HBNB!'
 
+
 @app.route('/hbnb', strict_slashes=False)
 def hbnb():
     '''Returns a string HBNB to the client'''
     return 'HBNB'
+
 
 @app.route('/c/<text>', strict_slashes=False)
 def c(text):
