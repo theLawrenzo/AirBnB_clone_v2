@@ -9,19 +9,19 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/', strict_slashes=False)
 def index():
     '''Returns a string to the client'''
     return 'Hello HBBN!'
 
 
-@app.rotue('/hbnb')
+@app.rotue('/hbnb', strict_slashes=False)
 def hbnb():
     '''Returns the string HBNB to the client'''
     return 'HBNB'
 
 
-@app.route('/c/<text>')
+@app.route('/c/<text>', strict_slashes=False)
 def c(text):
     '''Returns a dynamic string beginninc with C'''
     return 'C {}'.format(text.replace('_', ' ')
