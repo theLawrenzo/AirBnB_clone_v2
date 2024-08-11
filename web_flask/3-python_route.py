@@ -15,7 +15,7 @@ def index():
     return 'Hello HBBN!'
 
 
-@app.rotue('/hbnb', strict_slashes=False)
+@app.route('/hbnb', strict_slashes=False)
 def hbnb():
     '''Returns the string HBNB to the client'''
     return 'HBNB'
@@ -24,7 +24,7 @@ def hbnb():
 @app.route('/c/<text>', strict_slashes=False)
 def c(text):
     '''Returns a dynamic string beginninc with C'''
-    return 'C {}'.format(text.replace('_', ' ')
+    return 'C {}'.format(text.replace('_', ' '))
 
 
 @app.route('/python', strict_slashes=False)
