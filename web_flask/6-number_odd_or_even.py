@@ -5,6 +5,7 @@ from all hosts on a network interface
 '''
 
 from flask import Flask
+from flask import render_template
 
 app = Flask(__name__)
 
